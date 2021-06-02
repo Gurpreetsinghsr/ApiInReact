@@ -1,5 +1,3 @@
-import { propTypes } from "react-bootstrap/esm/Image";
-
 const Header = (props) => {
   return (
     // this is the Header of the main Page

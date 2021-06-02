@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Modal } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 const ImageList = (props) => {
@@ -7,8 +7,9 @@ const ImageList = (props) => {
       <div className="imagelist" style={{ marginTop: "10%" }}>
         {/* This is to render the List of Images*/}
         {props.post.map((x) => (
-          <div className="col-4" onClick={() => props.handleShow(x)}>
+          <div className="col-4" key={x.id} onClick={() => props.handleShow(x)}>
             <img
+              alt=""
               src={
                 "https://farm" +
                 x.farm +
@@ -32,7 +33,7 @@ const ImageList = (props) => {
         </Modal.Header>
         <Modal.Body>
           <div className="col-12">
-            <img src={props.link} className="images" />{" "}
+            <img alt="" src={props.link} className="images" />{" "}
             {/* lINK is directly used to get Image */}
           </div>
         </Modal.Body>
