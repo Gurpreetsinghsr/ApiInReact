@@ -1,0 +1,31 @@
+.imagelist {
+  margin-top: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+  text-align: center;
+  padding: 10px;
+  min-height: 20%;
+}
+.images {
+  max-width: 90%;
+  max-height: 90%;
+}
+.App-header {
+  position: fixed;
+  z-index: 999;
+  top: 0px;
+  background-color: #282c34;
+  min-height: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+}
+
+.headerInputField {
+  width: 20%;
+  margin: 5px;
+}
